@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- https://ishadeed.com/article/handling-text-over-image-css/ -->
+
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        align-items: baseline;
+
+        /* justify-content:last baseline; */
+        /* justify-items: center; */
+        /* align-content: center; */
+        border: 2px solid red;
+        /* width: 450px; */
+        height: 600px;
+      }
+
+      .flex-items {
+        height: 150px;
+        width: 150px;
+
+        border: 2px solid black;
+      }
+
+      .three {
+        font-size: 30px;
+        align-self: baseline;
+        height: 550px;
+        width: 150px;
+        vertical-align: middle;
+      }
+
+      .one {
+        font-size: 25px;
+        height: 150px;
+        width: 150px;
+        vertical-align: middle;
+      }
+
+      .two {
+        font-size: 5px;
+        height: 350px;
+        width: 150px;
+        vertical-align: middle;
+      }
+
+      .four {
+        font-size: 20px;
+        height: 450px;
+        width: 150px;
+        vertical-align: auto;
+      }
+
+      .five {
+        font-size: 15px;
+        height: 250px;
+        width: 150px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-items one">
+        <h1>One</h1>
+      </div>
+      <div class="flex-items two"><h1>Two</h1></div>
+      <div class="flex-items three"><h4>Three</h4></div>
+      <div class="flex-items four"><h6>Four</h6></div>
+      <div class="flex-items five"><h2>Five</h2></div>
+    </div>
+  </body>
+</html>

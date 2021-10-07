@@ -1,0 +1,11 @@
+:root{
+    --primary-color: rgb(160, 223, 43);
+    --secondary-color: rgb(43, 100, 223);
+}
+
+section{
+    background-color: var(--primary-color, red);
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
