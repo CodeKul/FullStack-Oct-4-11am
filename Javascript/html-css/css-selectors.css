@@ -1,0 +1,105 @@
+h2{
+    color: black;
+    background-color: yellow;
+}
+
+section.news{
+    background-color: aqua;
+
+}
+
+.asia{
+    color: crimson;
+}
+
+.europe{
+    color: darkgoldenrod;
+}
+
+.sports{
+    background-color: gray;
+}
+
+
+#news-para{
+    color: red;
+}
+
+
+
+/* child selector 
+syntax: parent element > child element */
+
+
+/* section > p{
+    background-color: violet;
+} */
+
+
+/* descendant selector 
+syntax: main-parent-element tree-element*/
+
+section div span{
+    font-size: xx-large;
+}
+
+/* 
+sibling selectors 
+1. general sibling selector 
+syntax: sibling-1 element ~ sibling-2 element {css stmts} 
+it will target such element which is coming after sibling-1 element
+
+
+2. adjacent sibling selector 
+syntax: sibling-1 element + sibling-2 element {css stmts} 
+it will target such element which is directly next(adjacent) after sibling-1 element
+*/
+h2 + p{
+    font-style: italic;
+}
+
+/* Attribute selectors
+1. [attribute-name] {css stmts}
+2. element-name[attribute-name] {css stmts}
+3. [attribute-name = value] 
+4. [attribute-name^= attribute-value] it will target element with given attribute name and its value at the start
+4. [attribute-name$= attribute-value] it will target element with given attribute name and its value at the end
+ */
+[href="http://www.codekul.com"]{
+    color: sandybrown;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+[href^="https"]{
+    color: rgb(244, 96, 207);
+    font-size: xx-large;
+    font-style: italic;
+}
+
+[href*="india"]{
+    color: rgb(96, 165, 244);
+    font-size: xx-large;
+    font-style: italic;
+}
+
+
+[href$=".in"]{
+    color: rgb(96, 244, 140);
+    font-size: xx-large;
+    font-style: italic;
+}
+
+[class~="News europe" ]{
+    font-style: italic;
+    font-weight: 900;
+}
+
+
+ section.sports[title] h2 {
+    color: yellow;
+}
+
+[id|="news"]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
